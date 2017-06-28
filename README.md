@@ -1,5 +1,5 @@
 # Page-Replacement-Memory-Simulator
-This program simulates page replacement algorithms. The page replacement algorithms included are clock, FIFO, LRU, random, and optimal. This program outputs the number of reads, the number of writes, and percentage of hits so that the algorithms can all be compared. 
+This program simulates page replacement algorithms. The page replacement algorithms included are clock, FIFO, LRU, random, and optimal. This program outputs the number of reads, the number of writes, and the percentage of hits so that the algorithms can all be compared. 
 
 To use this program, compile it by using the makefile. Type make to compile it. Make sure that the traces files are in the same location as the memory simulator program. 
 
