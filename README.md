@@ -9,7 +9,7 @@ Below is an example of an input.
 
 ./memorysim test.trace 3 opt debug
 
-The trace file is a recording a of running program. test.trace, test2.trace, and test3.trace are not recordings from a program. These were created for easy testing.
+The trace file is a recording of a running program. test.trace, test2.trace, and test3.trace are not recordings from a program. These were created for easy testing.
 
 The number of frames is the number of page frames.
 
