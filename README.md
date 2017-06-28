@@ -16,9 +16,13 @@ The number of frames is the number of page frames.
 Debug mode will output information to the screen of what is happening in the algorithm. It will tell you if a read or write is happening, the entries in cache that are being filled, if the cache is full, and if a page was found in cache. It will also show you how the cache looks like after each read from the trace file. I only recommend using debug mode on one of the test traces as they are not long like the other trace files.
 
 clk = clock
+
 lru = least recently used
+
 fifo = first in first out
+
 rndm = random
+
 opt = optimal
 
 To clean the files created by the makefile, type in "make clean".
