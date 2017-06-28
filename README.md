@@ -2,7 +2,8 @@
 This program simulates page replacement algorithms. The page replacement algorithms included are clock, FIFO, LRU, random, and optimal. This program outputs the number of reads, the number of writes, and percentage of hits so that the algorithms can all be compared. 
 
 To use this program, compile it by using the makefile. Type make to compile it. Make sure that the traces files are in the same location as the memory simulator program. 
-Once all of that is done, input ./memorysim <tracefile> <number of frames> <clk|lru|fifo|rndm|opt> <debug|quiet>
+
+Once all of that is done, input ./memorysim <tracefile> <number of frames> <clk | lru |fifo | rndm | opt> <debug|quiet>
 Below is an example of an input.
 ./memorysim test.trace 3 opt debug
 
