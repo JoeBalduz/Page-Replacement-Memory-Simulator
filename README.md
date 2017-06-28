@@ -3,7 +3,7 @@ This program simulates page replacement algorithms. The page replacement algorit
 
 To use this program, compile it by using the makefile. Type make to compile it. Make sure that the traces files are in the same location as the memory simulator program. 
 
-Once all of that is done, input "./memorysim <tracefile> <number of frames> <clk | lru | fifo | rndm | opt> <debug|quiet>"
+Once all of that is done, input ./memorysim "tracefile" "number of frames" "clk | lru | fifo | rndm | opt" "debug|quiet"
 
 Below is an example of an input.
 
