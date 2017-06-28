@@ -6,6 +6,7 @@ To use this program, compile it by using the makefile. Type make to compile it. 
 Once all of that is done, input "./memorysim <tracefile> <number of frames> <clk | lru |fifo | rndm | opt> <debug|quiet>"
 
 Below is an example of an input.
+
 ./memorysim test.trace 3 opt debug
 
 The trace file is a recording of running program. test.trace, test2.trace, and test3.trace are not recordings from a program. These were created for easy testing.
