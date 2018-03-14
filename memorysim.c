@@ -5,6 +5,8 @@
 
 #include "memorysim.h"
 
+#define PTSIZE 1048567 //2^32 logical address / 2^12 offset = 2^20 = 1048576 page table entries
+
 /*Assuming that all pages and page frames are 4096 bytes*/
 
 //Clock replacement algorithm
@@ -12,8 +14,6 @@ void clk(int frames, char* traceFile, int debug)
 {
 	unsigned addr;	//Holds the address from the file
 	char rw;	//Holds whether it is a read or write from the file
-
-	static int PTSIZE = 1048567;	//2^32 logical address / 2^12 offset = 2^20 = 1048576 page table entries
 
 	int i, j;	//Iterators
 
@@ -183,8 +183,6 @@ void fifo(int frames, char* traceFile, int debug)
 	unsigned addr;	//Holds the address from the file
 	char rw;		//Holds whether it is a read or write from the file
 
-	static int PTSIZE = 1048567;	//2^32 logical address / 2^12 offset = 2^20 = 1048576 page table entries
-
 	unsigned pageNumber;	
 
 	struct tableEntry PT[PTSIZE];		//Creates the page table
@@ -322,8 +320,6 @@ void lru(int frames, char* traceFile, int debug)
 {
 	unsigned addr;	//Holds the address from the file
 	char rw;	//Holds whether it is a read or write from the file
-
-	static int PTSIZE = 1048567;	//2^32 logical address / 2^12 offset = 2^20 = 1048576 page table entries
 
 	int i;	//Iterator
 
@@ -482,8 +478,6 @@ void rndm(int frames, char* traceFile, int debug)
 	unsigned addr;	//Holds the address from the file
 	char rw;	//Holds whether it is a read or write from the file
 
-	static int PTSIZE = 1048567;	//2^32 logical address / 2^12 offset = 2^20 = 1048576 page table entries
-
 	unsigned pageNumber;	
 
 	struct tableEntry PT[PTSIZE];		//Creates the page table
@@ -618,8 +612,6 @@ void opt(int frames, char* traceFile, int debug)
 {
 	unsigned addr;	//Holds the address from the file
 	char rw;		//Holds whether it is a read or write from the file
-
-	static int PTSIZE = 1048567;	//2^32 logical address / 2^12 offset = 2^20 = 1048576 page table entries
 
 	unsigned pageNumber;	
 
